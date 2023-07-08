@@ -1,0 +1,18 @@
+/* gStyles == general styles */
+
+/* general */
+*{
+    outline: 0px;
+    font-family:system-ui
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    direction: rtl;
+}
+/* loading bar (lb) */
+.lb{
+    height:5px;
+}
+/*  */

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="gStyles.css">
+        <link rel="icon" href="images/logo.jpg"></link>
+        <title>برمجيات | الصفحة التعريفية</title>
+    </head>
+    <body>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-right float-center nb">
+            
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.jpg" width="30" height="30" class="d-inline-block align-top rounded m-1">
+                برمجيات
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse float-right p-2" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#courses">الدورات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#threads">الثريدات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#our-message">رسالتنا</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+        <!-- gretting -->
+        <div class="container pt-4">
+            <div class="jumbotron text-center">
+                <h1>مرحبا بكم في برمجيات</h1>
+                <p>نحن شبكة نطمح لمشاركة كل ماهو مفيد للمبرمجين مهما اختلفت مستوياتهم من دورات و فعاليات و غيرها</p>
+                <a href="#courses" class="btn bg-success text-light btnLink">تصفح المزيد</a>
+                <a href="https://prog4all.ita27.com" data-toggle="modal" data-target="#modal" class="btn btn-outline-success btnLink text-success">مدونتنا</a>
+            </div>
+        </div>
+        <!-- courses -->
+        <div class="text-secondary bg-light chapter" id="courses">
+            <h1>دوراتنا :</h1>
+            <div class="container">
+                <div class="row justify-content-center pt-3">
+                    <add-card src="images/networking.jpeg" link="#" title="أساسيات الشبكات" details="دورة من إلقاء المهندس هاشم الشريف موجهة بهدف التاسيس الصحيح في الشبكات ." status="شاهد تسجيلات الدورة"></add-card>
+                    <add-card src="images/HTML&CSS.png" link="#" title="أساسيات HTML & CSS" details="دورة من إلقاء مدير حسابنا المبرمج عبدالرحيم لتغطية أهم أساسيات اللغتين ." status="سجل الآن"></add-card>
+                </div>
+            </div>
+        </div>
+        <!-- threads -->
+        <div class="bg-dark text-light chapter" id="threads">
+            <h1>سلاسل التغريدات</h1>
+            <div class="container pt-3">
+                <table class="table table-light text-dark table-bordered table-striped rounded rounded-1">
+                    <thead>
+                        <tr>
+                            <div class="input-group mb-3">
+                                <input type="text" id="search" class="form-control" placeholder="اكتب عنوان الثريد الذي تبحث عنه" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                <div class="input-group-prepend">
+                                  <button class="btn btn-outline-light rounded mr-1" type="button" id="button-addon1">ابحث</button>
+                                </div>
+                            </div>
+                        </tr>
+                        <tr>
+                            <th>عنوان الثريد</th>
+                            <th>تاريخ النشر</th>
+                            <th>رابط الثريد</th>
+                        </tr>
+                    </thead>
+                    <tbody id="list">
+                        <tr>
+                            <td>السيرفرات</td>
+                            <td>09 - 03 - 2023</td>
+                            <td>
+                                <a class="btn btn-danger btnLink" href="https://twitter.com/programming_4/status/1633930739023507459?s=20" data-toggle="modal" data-target="#modal">اضغط هنا</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>أنواع السيرفرات</td>
+                            <td>30 - 04 - 2023</td>
+                            <td>
+                                <a class="btn btn-danger btnLink" href="https://twitter.com/programming_4/status/1652587137634639872?s=20" data-toggle="modal" data-target="#modal">اضغط هنا</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>تعلم البرمجة في رمضان</td>
+                            <td>11 - 03 - 2023</td>
+                            <td>
+                                <a class="btn btn-danger btnLink" href="https://twitter.com/programming_4/status/1634454332140580864?s=20" data-toggle="modal" data-target="#modal">اضغط هنا</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>20 خطأ يقع فيه المبرمجون</td>
+                            <td>25 - 02 - 2023</td>
+                            <td>
+                                <a class="btn btn-danger btnLink" href="https://twitter.com/programming_4/status/1629598464081313793?s=20" data-toggle="modal" data-target="#modal">اضغط هنا</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>أساسيات البايثون</td>
+                            <td>01 - 03 - 2023</td>
+                            <td>
+                                <a class="btn btn-danger btnLink" href="https://twitter.com/programming_4/status/1631033354903601158?s=20" data-toggle="modal" data-target="#modal">اضغط هنا</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>الأندرويد</td>
+                            <td>04 - 03 - 2023</td>
+                            <td>
+                                <a class="btn btn-danger btnLink" href="https://twitter.com/programming_4/status/1632010145034035202?s=20" data-toggle="modal" data-target="#modal">اضغط هنا</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--  message -->
+        <div class="bg-light chapter" id="our-message">
+            <div class="container jumbotron">
+                <h4 class="">كلمة مهمة لكل متابعينا ...</h4>
+                <p class="pt-2" style="text-align:justify;">
+                    بسم الله الرحمن الرحيم و الصلاة و السلام على سيدنا محمد صلى الله عليهم و سلم ، أما بعد فالسلام عليكم 
+                    و رحمة الله و بركاته ....
+                    <br>
+                    &nbsp;&nbsp; متابعونا الأعزاء من كل مكان ، منذ ظهورنا في ديسمبر 2023 و نحن نطمح لتقديم الأفضل للمجتمع العربي في 
+                    مجال التقنية ، و الآن نحن نعمل جاهدين على إضافة المزيد من الميزات التي تنفعكم في تعلم البرمجة و مجالاتها 
+                    ، ففضلا و ليس أمرا ، لا تنسونا بصالح دعائكم بأن يوفقنا الله عز وجل في التحضير لما نخطط له لكم ، كما نحث القادرين
+                    أن يدعمونا ماليا و لو بالقليل و ذلك لنستطيع توفير أشياء مساعدة كاشتراك في زووم - لتسجيل الدورات - و بعض اكسسوارات الجهاز المكتبي
+                    التي من شأنها أن توفر لنا الراحة و الاستمتاع في عملنا من أجلكم .
+                </p>
+                <a class="btn btn-outline-dark" href="#">
+                    ادعمنا في باي بال
+                </a>
+            </div>
+        </div>
+        <!-- loading bar -->
+        <div class="progress p-0 rounded-0 fixed-bottom lb">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 75%;" id="loading"></div>
+        </div>
+        <!-- modals -->
+        <div class="modal fade" id="modal">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">تأكيد الخروج</h5>
+                  <button type="button" class="btn btn-close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body text-right">
+                  <p>
+                    سيؤدي هذا الأمر إلى خروجك من الصفحة متجها لموقع آخر . 
+                    <br>
+                    هل أنت متأكد من الخروح ؟
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" id="confirm">تأكيد</button>
+                  <button type="button" class="btn btn-secondary mr-1" data-dismiss="modal">إلغاء</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- footer -->
+        <footer class="p-3 text-center bg-light text-light chapter border-top container-fluid" dir="ltr">
+            <div class="row justify-content-around container">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <a type="button" class="btn btn-secondary m-1 rounded social" href="https://twitter.com/programming_4" target="_blank">Twitter</a>
+                    <a type="button" class="btn btn-secondary m-1 rounded social" href="https://instgram.com/programming__4">Instgram</a>
+                    <a type="button" class="btn btn-secondary m-1 rounded social" href="https://t.me/programming_4">Telegram</a>
+                </div>
+                <p class="text-muted">برمجيات | جميع الحقوق محفوظة</p>
+            </div>
+                
+        </footer>
+        <!-- arrow up -->
+        <img src="images/arrow-up.png" id="arrow" class=" position-fixed fixed-bottom align-bottom m-3 p-2 shadow-sm bg-secondary text-light" dir="ltr" style="transform: rotate(90deg);" width="30"></img>
+        <!-- scrtipts -->
+        <script src="jquery-3.7.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
