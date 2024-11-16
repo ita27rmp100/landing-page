@@ -5,16 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="gStyles.css">
-        <link rel="icon" href="images/logo.jpg"></link>
-        <title>برمجيات | الصفحة التعريفية</title>
+        <link rel="icon" href="images/itaTeam.png"></link>
+        <title>ITA | الصفحة التعريفية</title>
     </head>
     <body>
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-right float-center nb">
-            
+        <nav class="navbar navbar-expand-lg navbar-light text-dark bg-light text-right float-center nb">
             <a class="navbar-brand" href="#">
-                <img src="images/logo.jpg" width="30" height="30" class="d-inline-block align-top rounded m-1">
-                برمجيات
+              <img src="images/itaTeam.png" width="60" height="60" class="d-inline-block align-top" alt="">
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,129 +21,155 @@
           
             <div class="collapse navbar-collapse float-right p-2" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto justify-content-center">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">الرئيسية</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#courses">الدورات</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#threads">الثريدات</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#our-message">رسالتنا</a>
-                </li>
-              </ul>
+                  <li class="nav-item link">
+                    <a class="nav-link link" href="#">الرئيسية</a>
+                  </li>
+                  <li class="nav-item link">
+                      <a class="nav-link link" href="#goals">أهدافنا</a>
+                  </li>
+                  <li class="nav-item link">
+                      <a class="nav-link link" href="#services">خدماتنا</a>
+                  </li>
+                  <li class="nav-item link">
+                    <a class="nav-link link" href="#contact">تواصل معنا</a>
+                  </li>
+                </ul>
             </div>
         </nav>
         <!-- gretting -->
-        <div class="container pt-4">
-            <div class="jumbotron text-center">
-                <h1>مرحبا بكم في برمجيات</h1>
-                <p>نحن شبكة نطمح لمشاركة كل ماهو مفيد للمبرمجين مهما اختلفت مستوياتهم من دورات و فعاليات و غيرها</p>
-                <a href="#courses" class="btn bg-success text-light btnLink">تصفح المزيد</a>
-                <a href="https://prog4all.ita27.com" data-toggle="modal" data-target="#modal" class="btn btn-outline-success btnLink text-success">مدونتنا</a>
+        <div class="container-fluid pt-4 pb-4 row">
+            <div class="col-lg-4 order-lg-1">
+                <img src="images/wallpaper.png" class="wpaper_intro">
             </div>
-        </div>
-        <!-- courses -->
-        <div class="text-secondary bg-light chapter" id="courses">
-            <h1>دوراتنا :</h1>
-            <div class="container">
-                <div class="row justify-content-center pt-3">
-                    <add-card src="images/networking.jpeg" link="#" title="أساسيات الشبكات" details="دورة من إلقاء المهندس هاشم الشريف موجهة بهدف التاسيس الصحيح في الشبكات ." status="شاهد تسجيلات الدورة"></add-card>
-                    <add-card src="images/HTML&CSS.png" link="#" title="أساسيات HTML & CSS" details="دورة من إلقاء مدير حسابنا المبرمج عبدالرحيم لتغطية أهم أساسيات اللغتين ." status="سجل الآن"></add-card>
+            <div class="jumbotron text-right whowe_re col-lg-8 order-lg-0">
+                <h1>مرحبا بكم في ITA Team  ...</h1>
+                <p class="p-3">نحن فريق يطمح لمساعدة الشاب الجزائري في التعلم الأكاديمي و الذاتي .
+                    <br>
+                    نقدم العديد من الدورات ، المحاضرات و الاستشارات لتطوير مستوياتكم و رُقَي حياتكم .
+                </p>
+                <a href="https://prog4all.ita27.com" data-toggle="modal" data-target="#modal" class="btn btn-outline-dark btnLink text-dark float">المدونة</a>
+                <div class="jumbotron container st mt-4 text-center">
+                  <div class="row justify-content-around status">
+                    <new-ach value="10009" of="مشترك" idCild="students"></new-ach>
+                    <new-ach value="25" of="دورات" idCild="courses"></new-ach>
+                    <new-ach value="23" of="محاضرات" idCild="lectures"></new-ach>
+                    <new-ach value="45" of="استشارة" idCild="consulting"></new-ach>
+                  </div>
                 </div>
             </div>
         </div>
-        <!-- threads -->
-        <div class="bg-dark text-light chapter" id="threads">
-            <h1>سلاسل التغريدات</h1>
-            <div class="container pt-3">
-                <table class="table table-light text-dark table-bordered table-striped rounded rounded-1">
-                    <thead>
-                        <tr>
-                            <div class="input-group mb-3">
-                                <input type="text" id="search" class="form-control" placeholder="اكتب عنوان الثريد الذي تبحث عنه" aria-label="Example text with button addon" aria-describedby="button-addon1">
-                                <div class="input-group-prepend">
-                                  <button class="btn btn-outline-light rounded mr-1" type="button" id="button-addon1">ابحث</button>
-                                </div>
-                            </div>
-                        </tr>
-                        <tr>
-                            <th>عنوان الثريد</th>
-                            <th>تاريخ النشر</th>
-                            <th>رابط الثريد</th>
-                        </tr>
-                    </thead>
-                    <tbody id="list">
-                        <tr>
-                            <td>السيرفرات</td>
-                            <td>09 - 03 - 2023</td>
-                            <td>
-                                <a class="btn btn-danger btnLink" href="https://twitter.com/programming_4/status/1633930739023507459?s=20" data-toggle="modal" data-target="#modal">اضغط هنا</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>أنواع السيرفرات</td>
-                            <td>30 - 04 - 2023</td>
-                            <td>
-                                <a class="btn btn-danger btnLink" href="https://twitter.com/programming_4/status/1652587137634639872?s=20" data-toggle="modal" data-target="#modal">اضغط هنا</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>تعلم البرمجة في رمضان</td>
-                            <td>11 - 03 - 2023</td>
-                            <td>
-                                <a class="btn btn-danger btnLink" href="https://twitter.com/programming_4/status/1634454332140580864?s=20" data-toggle="modal" data-target="#modal">اضغط هنا</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>20 خطأ يقع فيه المبرمجون</td>
-                            <td>25 - 02 - 2023</td>
-                            <td>
-                                <a class="btn btn-danger btnLink" href="https://twitter.com/programming_4/status/1629598464081313793?s=20" data-toggle="modal" data-target="#modal">اضغط هنا</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>أساسيات البايثون</td>
-                            <td>01 - 03 - 2023</td>
-                            <td>
-                                <a class="btn btn-danger btnLink" href="https://twitter.com/programming_4/status/1631033354903601158?s=20" data-toggle="modal" data-target="#modal">اضغط هنا</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>الأندرويد</td>
-                            <td>04 - 03 - 2023</td>
-                            <td>
-                                <a class="btn btn-danger btnLink" href="https://twitter.com/programming_4/status/1632010145034035202?s=20" data-toggle="modal" data-target="#modal">اضغط هنا</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+        <!-- our goals -->
+        <div class="text-secondary bg-light chapter" id="goals">
+            <h1>أهدافنا :</h1>
+            <div class="container">
+                <div class="row justify-content-around pt-3">
+                    <new-goal title="تعزيز الوعي التقني" details="
+                    مسيرتنا بدأت بعون الله و نحن نحمل فوق عاتقنا مسؤولية زيادة الوعي بخصوص التقنية و تفرعاته
+                    و غرس مفهوم الرقمنة في أذهان شعبنا لتكون جزءا مهما عندهم فيطورون من مهاراتهم و ترقى 
+                    حياتهم .
+                    "></new-goal>
+                    <new-goal title="النجاح في الدراسة" details="
+                    كإخوة يجمعنا الإسلام ثم الوطن ، يطمح فريقنا إلى مساعدة كل تلميذ للنجاح
+                    في دراسته و الوقوف معه دائما حتى يتذوق كل منكم فرحة النجاح في امتحان البكالوريا
+                    و اختيار التخصص الذي يحلم به .
+                    "></new-goal>
+                    <new-goal title="بناء شاب جزائري ناجح" details="
+                    إن النهوض بمجتمعنا الجزائري و بناء جيل ناجح من الشباب في جل التخصصات هدف
+                    و مسؤولية كل عضو في فريقنا ، و ها نحن الآن نتعاون و نسعى بكل ما أوتينا لتحقيقه مهما كانت الظروف.
+                    "></new-goal>
+                </div>
             </div>
         </div>
-        <!--  message -->
-        <div class="bg-light chapter" id="our-message">
-            <div class="container jumbotron">
-                <h4 class="">كلمة مهمة لكل متابعينا ...</h4>
-                <p class="pt-2" style="text-align:justify;">
-                    بسم الله الرحمن الرحيم و الصلاة و السلام على سيدنا محمد صلى الله عليهم و سلم ، أما بعد فالسلام عليكم 
-                    و رحمة الله و بركاته ....
-                    <br>
-                    &nbsp;&nbsp; متابعونا الأعزاء من كل مكان ، منذ ظهورنا في ديسمبر 2023 و نحن نطمح لتقديم الأفضل للمجتمع العربي في 
-                    مجال التقنية ، و الآن نحن نعمل جاهدين على إضافة المزيد من الميزات التي تنفعكم في تعلم البرمجة و مجالاتها 
-                    ، ففضلا و ليس أمرا ، لا تنسونا بصالح دعائكم بأن يوفقنا الله عز وجل في التحضير لما نخطط له لكم ، كما نحث القادرين
-                    أن يدعمونا ماليا و لو بالقليل و ذلك لنستطيع توفير أشياء مساعدة كاشتراك في زووم - لتسجيل الدورات - و بعض اكسسوارات الجهاز المكتبي
-                    التي من شأنها أن توفر لنا الراحة و الاستمتاع في عملنا من أجلكم .
-                </p>
-                <a class="btn btn-outline-dark" href="#">
-                    ادعمنا في باي بال
-                </a>
+        <!--  services -->
+        <div class="text-secondary bg-light chapter" id="services">
+            <h1>خدماتنا :</h1>
+            <div class="container">
+                <div class="row justify-content-between pt-3">
+                    <new-service
+                        img="LandingPage.png"
+                        src="https://khamsat.com/programming/2642878 "></new-service>
+                   <new-service
+                        img="ads.png"
+                        src="https://khamsat.com/programming/1758146 "></new-service>
+                    <new-service
+                        img="wpStores.png"
+                        src="https://wa.me/+213696583437 "></new-service>
+                    <new-service
+                        img="wpBlogs.png"
+                        src="https://wa.me/+213696583437 "></new-service>
+                    <new-service
+                        img="wpBlogs.png"
+                        src="https://wa.me/+213696583437 "></new-service>
+                    <new-service
+                        img="wpBlogs.png"
+                        src="https://wa.me/+213696583437 "></new-service>
+                    <new-service
+                        img="wpBlogs.png"
+                        src="https://wa.me/+213696583437 "></new-service>
+                </div>
+            </div>
+        </div>
+        <!-- member list -->
+        <div class="text-secondary bg-light chapter">
+          <h1>أعضاء فريقنا :</h1>
+          <div class="container">
+            <div class="row flex-nowrap justify-content-around pt-3 memberDiv">
+              <!--  -->
+              <new-member
+                name="إسماعيل طيب عبدالرحيم",
+                image="ita.jpg",
+                tasks="مؤسس المشروع",
+                cvlink="#"
+              ></new-member>
+              <new-member
+                name="إسلام سليماني",
+                image="slimani.jpg",
+                tasks="مدير الموارد البشرية",
+                cvlink="#"
+              ></new-member>
+              <new-member
+                name="إسلام سليماني",
+                image="slimani.jpg",
+                tasks="مدير الموارد البشرية",
+                cvlink="#"
+              ></new-member>
+              <new-member
+                name="إسلام سليماني",
+                image="slimani.jpg",
+                tasks="مدير الموارد البشرية",
+                cvlink="#"
+              ></new-member>
+              <new-member
+                name="إسلام سليماني",
+                image="slimani.jpg",
+                tasks="مدير الموارد البشرية",
+                cvlink="#"
+              ></new-member>
+            </div>
+          </div>
+        </div>
+        <!-- contact us -->
+        <div class="text-secondary bg-light chapter pb-5" id="contact">
+            <h1>تواصل معنا :</h1>
+            <div class="container text-right text-dark">
+              <form action="" class="form-group">
+                <!-- name -->
+                <label for="name">الاسم الكامل :</label>
+                <input type="text" name="name" class="input-group" required>
+                <!-- email -->
+                <label for="email">البريد الالكتروني :</label>
+                <input type="email" name="email" class="input-group" required>
+                <!-- message -->
+                <label for="message">الرسالة :</label>
+                <textarea type="email" name="message" class="input-group" rows="8" required></textarea>
+                <!-- submit -->
+                <input type="submit" value="إرسال" class="btn bg-dark text-light float-left m-2">
+              </form>
             </div>
         </div>
         <!-- loading bar -->
         <div class="progress p-0 rounded-0 fixed-bottom lb">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 75%;" id="loading"></div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated footers" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 75%" id="loading"></div>
         </div>
         <!-- modals -->
         <div class="modal fade" id="modal">
@@ -175,16 +199,18 @@
         <footer class="p-3 text-center bg-light text-light chapter border-top container-fluid" dir="ltr">
             <div class="row justify-content-around container">
                 <div class="btn-group" role="group" aria-label="Basic example">
-                    <a type="button" class="btn btn-secondary m-1 rounded social" href="https://twitter.com/programming_4" target="_blank">Twitter</a>
                     <a type="button" class="btn btn-secondary m-1 rounded social" href="https://instgram.com/programming__4">Instgram</a>
                     <a type="button" class="btn btn-secondary m-1 rounded social" href="https://t.me/programming_4">Telegram</a>
+                    <a href="#" class="btn btn-outline-dark m-1 rounded social">ادعمنا في باي بال</a>
                 </div>
-                <p class="text-muted">برمجيات | جميع الحقوق محفوظة</p>
+                <p class="text-muted">ITA team | جميع الحقوق محفوظة</p>
             </div>
+            <div>
                 
+            </div>
         </footer>
         <!-- arrow up -->
-        <img src="images/arrow-up.png" id="arrow" class=" position-fixed fixed-bottom align-bottom m-3 p-2 shadow-sm bg-secondary text-light" dir="ltr" style="transform: rotate(90deg);" width="30"></img>
+        <img src="images/arrow-up.png" id="arrow" class="footers position-fixed fixed-bottom align-bottom m-3 p-2 shadow-sm text-light" dir="ltr" style="transform: rotate(90deg)" width="30"></img>
         <!-- scrtipts -->
         <script src="jquery-3.7.0.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
