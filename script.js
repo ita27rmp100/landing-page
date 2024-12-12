@@ -39,7 +39,7 @@ customElements.define('new-service',class extends HTMLElement{
         let img = this.getAttribute('img')
         this.innerHTML = `
             <div class="card">
-                <img src="images/services/${img}" class="card-img-top" alt="...">
+                <img src="./images/services/${img}" class="card-img-top" alt="...">
                 <div class="card-body">
                 <a href="${this.getAttribute('src')}" class="btn btn-primary social">اطلب الخدمة</a>
                 </div>
